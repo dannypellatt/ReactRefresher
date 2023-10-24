@@ -1,1 +1,51 @@
 REACT - Codecademy - https://www.codecademy.com/courses/react-101/lessons/react-jsx-intro/exercises/why-react
+
+
+WHAT IS REACT?
+
+- React is a javascript library created by Facebook.
+
+
+WHY REACT?
+
+- It's fast - handling complex updates while still feeling responsive.
+- It's modular - you use small reusable files rather than large, dense files. This helps javascript's maintainability problem.
+- It's scalable - large programs that display a lot of data are its best use case.
+- It's flexible - it can be used for many things other than web apps.
+- It's popular - a lot of companies use it, meaning lots of documentation, and good for getting a job.
+
+
+INTRO TO JSX
+
+- JavaScript XML is a syntax extension of javascript that provides highly functionable and reusable markup code.
+- It is not valid JavaScript, so a web browser can't read it - it must be compiled first.
+- It combines JavaScript and HTML.
+- It belongs in a JavaScript file.
+- It's used to create DOM elements that are then rendered in the React DOM.
+- A basic unit of JSX is called a JSX element.
+- JSX elements are treated as JavaScript expressions, meaning they can go anywhere JavaScript can go. It can be saved in a variable, passed to a function, stored in an object or array, etc.
+- JSX elements can have attributes, just like HTML. It's a name, an equals sign, then a value wrapped in quotes: name="value".
+- A single JSX element can have many attributes.
+- You can nest elements inside others, <a><h1>for instance</h1></a>.
+- If a JSX expression takes up more than one line, you must wrap the whole expression in parenthesis.
+- JSX expressions must have exactly one outermost element. If there are multiple, wrap them all in a div.
+- To render a JSX element means to make it appear on a screen.
+- React relies on two things to render: what content to render, and where to place it on the screen.
+- We can create a React root using createRoot() and using its render() method to render JSX.
+- The render() method's argument does not need to be JSX, but must evaluate to a JSX expression.
+- You can save a JSX expression as a variable, and then pass that to render.
+- One special thing about React root's render() is that it only updates elemenets that have changed.
+- Updating only the necessary elements is accomplished using React's virtual DOM.
+
+
+THE VIRTUAL DOM
+
+- React's virtual DOM prevents wasteful DOM manipulation
+
+
+
+
+
+
+
+
