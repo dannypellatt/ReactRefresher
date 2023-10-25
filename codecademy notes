@@ -1,10 +1,8 @@
 REACT - Codecademy - https://www.codecademy.com/courses/react-101/lessons/react-jsx-intro/exercises/why-react
 
-
-WHAT IS REACT?
+----------------------- INTRO TO REACT
 
 - React is a javascript library created by Facebook.
-
 
 WHY REACT?
 
@@ -15,7 +13,7 @@ WHY REACT?
 - It's popular - a lot of companies use it, meaning lots of documentation, and good for getting a job.
 
 
-INTRO TO JSX
+----------------------- INTRO TO JSX
 
 - JavaScript XML is a syntax extension of javascript that provides highly functionable and reusable markup code.
 - It is not valid JavaScript, so a web browser can't read it - it must be compiled first.
@@ -32,15 +30,35 @@ INTRO TO JSX
 - To render a JSX element means to make it appear on a screen.
 - React relies on two things to render: what content to render, and where to place it on the screen.
 - We can create a React root using createRoot() and using its render() method to render JSX.
-- The render() method's argument does not need to be JSX, but must evaluate to a JSX expression.
+- The render() method's argument does not need to be JSX but must evaluate to a JSX expression.
 - You can save a JSX expression as a variable, and then pass that to render.
-- One special thing about React root's render() is that it only updates elemenets that have changed.
+- One special thing about React root's render() is that it only updates elements that have changed.
 - Updating only the necessary elements is accomplished using React's virtual DOM.
 
 
-THE VIRTUAL DOM
+----------------------- THE VIRTUAL DOM
 
 - React's virtual DOM prevents wasteful DOM manipulation
+
+THE PROBLEM
+
+- DOM manipulation is at the heart of the modern, interactive web. Unfortunately, it's a lot slower than JavaScript operations.
+- The slowness is made worse by the fact that most JS frameworks update the DOM much more than they have to.
+- If you have a list of ten items and one item changes, you don't need to update the whole list.
+- To address this, React developers invented the Virtual DOM.
+
+THE VIRTUAL DOM
+
+- The DOM (Document Object Model) is a representation of a webpage created by and stored in a user's browser.
+- The browser takes HTML, and transforms it into a DOM.
+- The DOM is stored as a tree-like structure, best thought of as a tree of nodes representing a web page.
+- If a small change happens using a DOM, it's faster to update everything than to work out which bit has changed.
+- It's faster still to use a Virtual DOM - a representation of a DOM as a JavaScript object.
+- The framework makes a copy of the JavaScript object and, when changes are made, then compares the two copies. This is called diffing.
+- It then informs the browser of these changes and only updates the necessary parts.
+- Making changes with JavaScript objects is much faster than comparing DOMs.
+- Using a Virtual DOM allows browsers to see when no changes need to be made, only repaint certain elements, and groups together the changes needed.
+
 
 
 
